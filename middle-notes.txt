@@ -1,0 +1,6 @@
+for an array that contains i=4 elements, we want to return array[1] and array[2]. so array[i-3] and array[i-2]
+OR array[(length/2)-1] and array[length/2]
+for an array that contains i=6 elements, we want to return array[2] and array[3]. so array[i-4] and array[i-3]
+OR array[(length/2)-1] and array[length/2]
+
+for an array that contains i=3 elements we want to return array[floor(length/2)]
