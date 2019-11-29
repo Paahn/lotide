@@ -25,30 +25,29 @@ const assertArraysEqual = function(list1, list2){
    }
 }
 
-assertArraysEqual(["a", "b", 3], ["a", "b", 3]);
-assertArraysEqual(["a", "b", "3"], ["a", "b", 3]);
+// assertArraysEqual(["a", "b", 3], ["a", "b", 3]);
+// assertArraysEqual(["a", "b", "3"], ["a", "b", 3]);
 
-assertArraysEqual([45], [45, 67, 99]);
-assertArraysEqual([23, 34, 34], [23, 34, 34]);
+// assertArraysEqual([45], [45, 67, 99]);
+// assertArraysEqual([23, 34, 34], [23, 34, 34]);
 
-const without = function(inputArray, removeArray){
-  outputArray = [];
-  index1 = null;
-  index2 = null;
-  console.log(` input is ${inputArray.length} < ${removeArray.length}.`);
-  if (inputArray.length < removeArray.length){
+const without = function(inputArray, removeFromArray){
+  // let outputArray = [];
+  // console.log(` input is ${inputArray.length} < ${removeFromArray.length}.`);
+  // if (inputArray.length < removeFromArray.length){
     // we need to find the indices where we want to splice the inputArray
     for (let i = 0; i < inputArray.length; i++){
-        if (inputArray[i] === removeArray[i]){
-          index1 = i;
-          index2 = i + 1;
+      for (let j = 0; j < removeFromArray.length; j++){
+        if (inputArray[i] === removeFromArray[j]){
+          inputArray.splice(i, 1);
         }
+      }
     }
-    outputArray = inputArray.splice(index1, index2);
-  } else {
-    console.log("You're trying to remove more elements that the source array has!");
-  }
-  return outputArray;
+  // } else {
+  //   console.log("You're trying to remove more elements that the source array has!");
+  // }
+  console.log(inputArray);
+  return inputArray;
 }
 
 console.log(without([1, 2, 3], [1])); // => [2, 3]
