@@ -1,16 +1,10 @@
-const assertEqual = function(actual, expected){
-  if (actual === expected){
-    console.log(`😀😀😀 ${actual} === ${expected}`);
-  } else {
-    console.log(`😟😟😟 ${actual} !== ${expected}`);
-  }
-}
-const head = function(array){
+const assertEqual = require('./assertEqual');
+
+
+// head is a function that returns the first element (aka head) of an array
+const head = function (array) {
   return array[0];
 }
 
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-assertEqual(head(["I'm the only element in this array"]), "I'm the only element in this array");
-assertEqual(head([89, 90, 3]), 45);
+module.exports = head;
 

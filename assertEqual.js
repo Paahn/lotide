@@ -1,3 +1,4 @@
+// assertEqual asserts if the 2 inputs given are identical
 const assertEqual = function(actual, expected){
   if (actual === expected){
     console.log(`😀😀😀 ${actual} === ${expected}`);
@@ -5,7 +6,5 @@ const assertEqual = function(actual, expected){
     console.log(`😟😟😟 ${actual} !== ${expected}`);
   }
 }
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
-assertEqual("hello Kitty", "hello Kitty");
-assertEqual(32, 337);
+
+module.exports = assertEqual;
