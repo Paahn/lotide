@@ -25,11 +25,7 @@ const assertArraysEqual = function(list1, list2){
    }
 }
 
-// assertArraysEqual(["a", "b", 3], ["a", "b", 3]);
-// assertArraysEqual(["a", "b", "3"], ["a", "b", 3]);
-
-// assertArraysEqual([45], [45, 67, 99]);
-// assertArraysEqual([23, 34, 34], [23, 34, 34]);
+//  middle returns an array containing the middle element of the input array
 
 const middle = function(array) {
   let parity = "";
@@ -52,4 +48,6 @@ const middle = function(array) {
 }
 assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // => [2, 3]
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // => [3, 4]
+assertArraysEqual(middle([1, 2, 3, 4, 5]), [3, 4]); // => [3]
+
 
