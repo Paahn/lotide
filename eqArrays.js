@@ -11,6 +11,8 @@ const eqArrays = function(array1, array2){
         assertment = false;
       };
     }
+  } else {
+    assertment = false;
   }
   return assertment;
 }
