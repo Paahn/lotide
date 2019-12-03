@@ -1,7 +1,7 @@
 {
   "name": "@paahn/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "clone of lodash project",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/Paahn/lotide.git"
   },
-  "author": "",
+  "author": "Panos Hatzinikolaou",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Paahn/lotide/issues"
