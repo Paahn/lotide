@@ -19,3 +19,4 @@ const youLookForIt = findKey({
 console.log(youLookForIt);
 
 assertEqual(youLookForIt, "noma");
+module.exports = findKey;

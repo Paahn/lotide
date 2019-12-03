@@ -68,3 +68,4 @@ console.log(`${cd} = ${dc} expected to be true: ${eqObjects(cd, dc)}`); // => tr
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
 console.log(`${cd} = ${cd2} expected to be false: ${eqObjects(cd, cd2)}`); // => false
+module.exports = eqObjects;
