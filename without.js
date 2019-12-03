@@ -4,16 +4,10 @@ const eqArrays = require('./eqArrays')
 
 const assertArraysEqual = require('./assertArraysEqual')
 
-// assertArraysEqual(["a", "b", 3], ["a", "b", 3]);
-// assertArraysEqual(["a", "b", "3"], ["a", "b", 3]);
-
-// assertArraysEqual([45], [45, 67, 99]);
-// assertArraysEqual([23, 34, 34], [23, 34, 34]);
+//return a new array with only those elements from source that are not present in the removeFromArray.
 
 const without = function(inputArray, removeFromArray){
-  // let outputArray = [];
-  // console.log(` input is ${inputArray.length} < ${removeFromArray.length}.`);
-  // if (inputArray.length < removeFromArray.length){
+
     // we need to find the indices where we want to splice the inputArray
     for (let i = 0; i < inputArray.length; i++){
       for (let j = 0; j < removeFromArray.length; j++){
@@ -22,9 +16,6 @@ const without = function(inputArray, removeFromArray){
         }
       }
     }
-  // } else {
-  //   console.log("You're trying to remove more elements that the source array has!");
-  // }
   console.log(inputArray);
   return inputArray;
 }

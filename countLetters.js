@@ -7,7 +7,7 @@
 //   }
 // }
 
-
+// this function counts how many occurences of the same letter in a string
 const countLetters = function (inputString) {
   const results = {};
 

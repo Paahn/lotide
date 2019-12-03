@@ -2,7 +2,7 @@ const eqArrays = require('./eqArrays')
 
 const assertArraysEqual = require('./assertArraysEqual')
 
-
+// keep collecting from the input array until the callback provided returns a truthy value. 
 const takeUntil = function(array, callback){
   let newArr = [];
 
